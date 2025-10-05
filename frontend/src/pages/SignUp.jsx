@@ -26,7 +26,7 @@ const SignUp = () => {
         alert("All fields are required");
       } else {
         const response = await axios.post(
-          "https://bookheaven-backend-xjw7.onrender.com/api/v1/sign-up",
+          "https://logiksutra-bookapp-backend.onrender.com/api/v1/sign-up",
           Values
         );
         // console.log(response.data)
