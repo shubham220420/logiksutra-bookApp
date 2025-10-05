@@ -12,7 +12,7 @@ const Favourites = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "https://bookheaven-backend-xjw7.onrender.com/api/v1/get-favourite-books",
+        "https://logiksutra-bookapp-backend.onrender.com/api/v1/get-favourite-books",
         { headers }
       );
       setFavouriteBooks(response.data.data);

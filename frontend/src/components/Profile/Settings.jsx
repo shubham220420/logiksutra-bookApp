@@ -19,7 +19,7 @@ const Settings = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "https://bookheaven-backend-xjw7.onrender.com/api/v1/get-user-information",
+        "https://logiksutra-bookapp-backend.onrender.com/api/v1/get-user-information",
         { headers }
       );
       setProfileData(response.data);
@@ -30,7 +30,7 @@ const Settings = () => {
 
   const submitAddress = async () => {
     const response = await axios.put(
-      "https://bookheaven-backend-xjw7.onrender.com/api/v1/update-address",
+      "https://logiksutra-bookapp-backend.onrender.com/api/v1/update-address",
       Value,
       { headers }
     );

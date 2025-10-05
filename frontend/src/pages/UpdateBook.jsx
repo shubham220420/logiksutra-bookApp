@@ -40,7 +40,7 @@ const UpdateBook = () => {
         alert("All fields are required");
       } else {
         const response = await axios.put(
-          "https://bookheaven-backend-xjw7.onrender.com/api/v1/update-book",
+          "https://logiksutra-bookapp-backend.onrender.com/api/v1/update-book",
           Data,
           { headers }
         );
@@ -62,7 +62,7 @@ const UpdateBook = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        `https://bookheaven-backend-xjw7.onrender.com/api/v1/get-book-by-id/${id}`
+        `https://logiksutra-bookapp-backend.onrender.com/api/v1/get-book-by-id/${id}`
       );
 
       setData(response.data.data);

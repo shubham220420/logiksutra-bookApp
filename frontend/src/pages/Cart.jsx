@@ -17,7 +17,7 @@ const Cart = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "https://bookheaven-backend-xjw7.onrender.com/api/v1/get-user-cart",
+        "https://logiksutra-bookapp-backend.onrender.com/api/v1/get-user-cart",
         { headers }
       );
       setCart(response.data.data);
@@ -27,7 +27,7 @@ const Cart = () => {
 
   const deletItem = async (bookid) => {
     const response = await axios.put(
-      `https://bookheaven-backend-xjw7.onrender.com/api/v1/remove-from-cart/${bookid}`,
+      `https://logiksutra-bookapp-backend.onrender.com/api/v1/remove-from-cart/${bookid}`,
       {},
       { headers }
     );
@@ -48,7 +48,7 @@ const Cart = () => {
   const PlaceOrder = async () => {
     try {
       const response = await axios.post(
-        `https://bookheaven-backend-xjw7.onrender.com/api/v1/place-order`,
+        `https://logiksutra-bookapp-backend.onrender.com/api/v1/place-order`,
         { order: Cart },
         { headers }
       );

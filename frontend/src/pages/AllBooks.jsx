@@ -10,7 +10,7 @@ const AllBooks = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "https://bookheaven-backend-xjw7.onrender.com/api/v1/get-all-books"
+        "https://logiksutra-bookapp-backend.onrender.com/api/v1/get-all-books"
       );
       setData(response.data.data);
     };

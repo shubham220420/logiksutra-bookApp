@@ -11,7 +11,7 @@ const BookCard = ({ data, favourite }) => {
 
   const handleRemoveBook = async () => {
     const response = await axios.put(
-      "https://bookheaven-backend-xjw7.onrender.com/api/v1/remove-book-from-favourite",
+      "https://logiksutra-bookapp-backend.onrender.com/api/v1/remove-book-from-favourite",
       {},
       { headers }
     );

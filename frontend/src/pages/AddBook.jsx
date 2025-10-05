@@ -35,7 +35,7 @@ const AddBook = () => {
         alert("All fields are required");
       } else {
         const response = await axios.post(
-          "https://bookheaven-backend-xjw7.onrender.com/api/v1/add-book",
+          "https://logiksutra-bookapp-backend.onrender.com/api/v1/add-book",
           Data,
           { headers }
         );
